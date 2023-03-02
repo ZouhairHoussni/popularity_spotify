@@ -1,0 +1,11 @@
+{% load static %}
+
+<header class="header">
+   
+    <h1 class="header_title">Populatité Spotify</h1>
+    {% if user.is_authenticated %}
+        
+        <button class="logout_button" onclick="window.location.href='/logout/'">Logout</button>
+    {% endif %}
+   
+</header>

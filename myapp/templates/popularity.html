@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+  {% if results %}
+ 
+  <p class="result">L'artiste d'une chanson "<span class="text">{{text}}</span>" est : "<span class="results">{{results}}</span>"</p>
+  <p>
+    <button class="button" onclick="window.location.href='{% url 'my_view' %}'">Retour</button>
+  </p>
+  {% endif %}
+
+{% endblock %}
