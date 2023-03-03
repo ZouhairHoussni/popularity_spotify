@@ -130,3 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'welcome'
+
+CSRF_COOKIE_DOMAIN = 'popularity.onrender.com'
+CSRF_TRUSTED_ORIGINS = ['popularity.onrender.com']

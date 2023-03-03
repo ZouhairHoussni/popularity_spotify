@@ -5,7 +5,7 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 
-@csrf_exempt
+
 def register(request):
 
     if request.method == "POST":
@@ -24,7 +24,7 @@ def register(request):
     else:
         form = UserRegisterForm()
         return render(request, 'registration/register.html', {'form': form})
-@csrf_exempt    
+ 
 @login_required
 def logout_view(request):
     logout(request)
