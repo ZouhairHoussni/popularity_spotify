@@ -3,7 +3,9 @@ from django.contrib import messages
 from .forms import UserRegisterForm
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def register(request):
 
     if request.method == "POST":
