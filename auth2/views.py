@@ -24,7 +24,7 @@ def register(request):
     else:
         form = UserRegisterForm()
         return render(request, 'registration/register.html', {'form': form})
-    
+@csrf_exempt    
 @login_required
 def logout_view(request):
     logout(request)
