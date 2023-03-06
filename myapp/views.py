@@ -2,7 +2,7 @@ import spotipy,requests,json
 from spotipy.oauth2 import SpotifyClientCredentials
 from django.shortcuts import render
 from .forms import MyForm
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required,csrf_exempt
 import pandas as pd
 
 
@@ -42,6 +42,7 @@ def get_audio_features(query):
     return df
 
 @login_required
+@csrf_exempt
 def my_view(request):
     
     if request.method == 'POST':
