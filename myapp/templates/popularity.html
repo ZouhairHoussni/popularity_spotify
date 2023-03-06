@@ -6,7 +6,7 @@
 
   {% if results %}
  
-  <p class="result">La popularité de la chanson "<span class="text">{{text}}</span>"" est "<span class="text">{{results}} </span>"</p>
+  <p class="result">La popularité de la chanson "<span class="text">{{text}}</span>" de l'artiste "<span class="text">{{artiste}}</span>" est "<span class="text">{{results}} </span>"</p>
   <p>
     <button class="button" onclick="window.location.href='{% url 'my_view' %}'">Retour</button>
   </p>

@@ -60,7 +60,7 @@ def my_view(request):
             response = requests.get(f"https://spotifast.onrender.com/predict/?duration_ms={valeurs[0]}&danceability={valeurs[1]}&energy={valeurs[2]}&loudness={valeurs[3]}&speechiness={valeurs[4]}&acousticness={valeurs[5]}&instrumentalness={valeurs[6]}&liveness={valeurs[7]}&valence={valeurs[8]}&tempo={valeurs[9]}")
             results = json.loads(response.text)
             results = int(results['Class'])
-            
+            print(artist)
             my_model = form.save(commit=False) 
             my_model.user = request.user 
             username = request.user 
