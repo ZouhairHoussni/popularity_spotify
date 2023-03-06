@@ -131,5 +131,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'welcome'
 
-CSRF_COOKIE_DOMAIN = 'https://popularity.onrender.com'
-CSRF_TRUSTED_ORIGINS = ['https://popularity.onrender.com']
+CSRF_COOKIE_DOMAIN = '*'
+CSRF_TRUSTED_ORIGINS = ['*']

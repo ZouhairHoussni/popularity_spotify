@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+  {% if results %}
+ 
+  <p class="result">Pas de chanson en ce nom"<span class="text">{{text}}</span></span></p>
+  <p>
+    <button class="button" onclick="window.location.href='{% url 'my_view' %}'">Retour</button>
+  </p>
+  {% endif %}
+
+{% endblock %}
