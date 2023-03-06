@@ -4,6 +4,7 @@ from django.shortcuts import render
 from .forms import MyForm
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse
 import pandas as pd
 
 
